@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Video Transcript</title>
+  </head>
+  <body>
+    <h1>Video Transcript</h1>
+    <form method="post">
+      <input type="text" name="video_url" placeholder="Enter video URL">
+      <input type="submit" value="Submit">
+    </form>
+    {% if transcript %}
+      <h2>Transcript</h2>
+      <p>{{ transcript }}</p>
+    {% endif %}
+  </body>
+</html>
